@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align-content</title>
+
+    <style>
+
+        .container{
+             max-height: 450px;
+             max-width:300px;
+             display: flex;
+             flex-wrap: wrap;
+             border: 1px solid black;
+        }
+
+        .item{
+             background-color: orange;
+             padding: 0 5px;
+             margin: 5px;
+             flex: 1;
+             text-align: center;
+             color: white;
+             border: 2px solid black;
+        }
+        
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-content: stretch;
+
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .between{
+            align-content: space-between;
+        }
+
+        .araund{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="container stretch">
+        <div class="item">1Não obstante, orias comuns pode ser interessante para melhor compreender</div>
+        <div class="item">2onforme já definido, uma manifestação da linguagem</div>
+        <div class="item">3agos diversos tipos de texto em categorias comuns pode ser interessante</div>
+        <div class="item">4Um texto é, conforme já definido, uma manifestação da linguagem.</div>
+        <div class="item">5linguagem. Não obstante, agrupar e organizar os diversos tipos</div>
+        <div class="item">6Um texto é, conforme já definido, uma manifestação da linguagem. Não obstante, agrupar e organ</div>
+        <div class="item">7Um Não obstante, agrupar e organ</div>
+    </div>
+
+    <p>Center</p>
+    <div class="container center">
+        <div class="item">1Não obstante, orias comuns pode ser interessante para melhor compreender</div>
+        <div class="item">2onforme já definido, uma manifestação da linguagem</div>
+        <div class="item">3agos diversos tipos de texto em categorias comuns pode ser interessante</div>
+        <div class="item">4Um texto é, conforme já definido, uma manifestação da linguagem.</div>
+        <div class="item">5linguagem. Não obstante, agrupar e organizar os diversos tipos</div>
+        <div class="item">6Um texto é, conforme já definido, uma manifestação da linguagem. Não obstante, agrupar e organ</div>
+        <div class="item">7Um Não obstante, agrupar e organ</div>
+    </div>
+
+    <p>flex-start</p>
+    <div class="container start">
+        <div class="item">1Não obstante, orias comuns pode ser interessante para melhor compreender</div>
+        <div class="item">2onforme já definido, uma manifestação da linguagem</div>
+        <div class="item">3agos diversos tipos de texto em categorias comuns pode ser interessante</div>
+        <div class="item">4Um texto é, conforme já definido, uma manifestação da linguagem.</div>
+        <div class="item">5linguagem. Não obstante, agrupar e organizar os diversos tipos</div>
+        <div class="item">6Um texto é, conforme já definido, uma manifestação da linguagem. Não obstante, agrupar e organ</div>
+        <div class="item">7Um Não obstante, agrupar e organ</div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container end">
+        <div class="item">1Não obstante, orias comuns pode ser interessante para melhor compreender</div>
+        <div class="item">2onforme já definido, uma manifestação da linguagem</div>
+        <div class="item">3agos diversos tipos de texto em categorias comuns pode ser interessante</div>
+        <div class="item">4Um texto é, conforme já definido, uma manifestação da linguagem.</div>
+        <div class="item">5linguagem. Não obstante, agrupar e organizar os diversos tipos</div>
+        <div class="item">6Um texto é, conforme já definido, uma manifestação da linguagem. Não obstante, agrupar e organ</div>
+        <div class="item">7Um Não obstante, agrupar e organ</div>
+    </div>
+
+    <p>space-around</p>
+    <div class="container around">
+        <div class="item">1Não obstante, orias comuns pode ser interessante para melhor compreender</div>
+        <div class="item">2onforme já definido, uma manifestação da linguagem</div>
+        <div class="item">3agos diversos tipos de texto em categorias comuns pode ser interessante</div>
+        <div class="item">4Um texto é, conforme já definido, uma manifestação da linguagem.</div>
+        <div class="item">5linguagem. Não obstante, agrupar e organizar os diversos tipos</div>
+        <div class="item">6Um texto é, conforme já definido, uma manifestação da linguagem. Não obstante, agrupar e organ</div>
+        <div class="item">7Um Não obstante, agrupar e organ</div>
+    </div>
+
+    <p>space-between</p>
+    <div class="container between">
+        <div class="item">1Não obstante, orias comuns pode ser interessante para melhor compreender</div>
+        <div class="item">2onforme já definido, uma manifestação da linguagem</div>
+        <div class="item">3agos diversos tipos de texto em categorias comuns pode ser interessante</div>
+        <div class="item">4Um texto é, conforme já definido, uma manifestação da linguagem.</div>
+        <div class="item">5linguagem. Não obstante, agrupar e organizar os diversos tipos</div>
+        <div class="item">6Um texto é, conforme já definido, uma manifestação da linguagem. Não obstante, agrupar e organ</div>
+        <div class="item">7Um Não obstante, agrupar e organ</div>
+    </div>
+</body>
+</html>
